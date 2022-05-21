@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/animacoes.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/responsivo.css" />
+    <link rel="stylesheet" href="./css/variaveis.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonte.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./src/star wars.ico" type="image/x-icon" />
+    <title>Selecione seu Personagem</title>
+  </head>
+
+  <body>
+    <main>
+      <header class="cabecalho">
+        <h1 class="titulo2">Character Select</h1>
+      </header>
+      <!--Div dos personagens-->
+      <div class="selecao">
+        <!--Div do player 1-->
+        <div class="personagemG j1">
+          <img
+            id="j1"
+            src="./src/personagens/lukeSkywalker.png"
+            alt="Personagem Selecionado Jogador 1"
+          />
+          <!--Div nome do J1-->
+          <div>
+            <h2 id="nome">Luke Skywalker</h2>
+          </div>
+        </div>
+        <!--Div da seleção de personagens-->
+        <ul class="PersonagemLista">
+          <!--Luke Skywalker-->
+          <li
+            class="personagem j1select"
+            id="lukeSkywalker"
+            data-name="Luke Skywalker"
+          >
+            <span class="tag">1P</span>
+            <img src="./src/icones/LUKE.jpeg" alt="Luke Skywalker" />
+          </li>
+          <!--Obi Wan-->
+          <li class="personagem" id="obiWanKenobi" data-name="ObiWan Kenobi">
+            <span class="tag">1P</span>
+            <img src="./src/icones/OBI.jpeg" alt="Obi Wan Kenobi" />
+          </li>
+          <!--Stormtrooper-->
+          <li class="personagem" id="stormtrooper" data-name="Stormtrooper">
+            <span class="tag">1P</span>
+            <img src="./src/icones/STORMTROOPER.jpeg" alt="Stormtrooper" />
+          </li>
+          <!--Han Solo-->
+          <li class="personagem" id="hanSolo" data-name="Han Solo">
+            <span class="tag">1P</span>
+            <img src="./src/icones/HAN.jpeg" alt="Han Solo" />
+          </li>
+          <!--Chewbacca-->
+          <li class="personagem" id="chewbacca" data-name="Chewbacca">
+            <span class="tag">1P</span>
+            <img src="./src/icones/CHEW.jpeg" alt="Chewbacca" />
+          </li>
+          <!--Lord Vader-->
+          <li
+            class="personagem j2select"
+            id="lordVader"
+            data-name="Darth Vader"
+          >
+            <span class="tag">2P</span>
+            <img
+              id="vaderalt"
+              src="./src/icones/VADER.jpeg"
+              alt="Darth Vader"
+            />
+          </li>
+          <!--Yoda-->
+          <li class="personagem" id="yoda" data-name="Yoda">
+            <span class="tag">1P</span>
+            <img src="./src/icones/YODA.jpeg" alt="Yoda" />
+          </li>
+          <!--Boba Fett-->
+          <li class="personagem" id="bobaFett" data-name="Boba Fett">
+            <span class="tag">1P</span>
+            <img src="./src/icones/BOBA.jpeg" alt="Boba Fett" />
+          </li>
+          <!--Imperador Palpatine-->
+          <li
+            class="personagem"
+            id="imperadorPalpatine"
+            data-name="Imperador Palpatine"
+          >
+            <span class="tag">1P</span>
+            <img src="./src/icones/PALPATINE.jpeg" alt="Imperador Palpatine" />
+          </li>
+        </ul>
+        <!--Div do player 2-->
+        <div class="personagemG selecionado j2">
+          <img
+            id="j2"
+            src="./src/personagens/lordVader.png"
+            alt="Personagem Selecionado Jogador 2"
+          />
+          <!--Div nome do J2-->
+          <div class="nome">
+            <h2>Darth Vader</h2>
+          </div>
+        </div>
+      </div>
+      <p>By The Dallas</p>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
